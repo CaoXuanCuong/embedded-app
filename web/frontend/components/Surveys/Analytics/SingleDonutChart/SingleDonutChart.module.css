@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.chart {
+  height: 264px;
+  margin-top: 14px;
+}
+
+.badge {
+  width: 160px;
+}

@@ -1,0 +1,14 @@
+.pages_list {
+  list-style: none;
+  padding: 0;
+}
+.page_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.page_item + .page_item {
+  border-top: 1px solid #ccc;
+}

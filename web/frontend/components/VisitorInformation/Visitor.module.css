@@ -1,0 +1,19 @@
+.information_header {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 6px 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto,
+    "Helvetica Neue", sans-serif;
+}
+
+.information_item {
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
+}
+
+.information_item > span {
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 6px;
+}

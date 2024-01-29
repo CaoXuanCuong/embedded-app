@@ -1,0 +1,150 @@
+.cart_icon :global(.Polaris-Button--disabled.Polaris-Button--iconOnly) {
+  border-color: transparent;
+  background: rgba(0, 128, 96, 0.9);
+  scale: 0.85;
+}
+
+.cart_icon :global(.Polaris-Button.Polaris-Button--disabled svg) {
+  fill: #ffffff;
+}
+
+.home_icon :global(.Polaris-Button--disabled.Polaris-Button--iconOnly) {
+  border-color: transparent;
+  background: rgba(215, 44, 13, 0.8);
+  scale: 0.85;
+}
+
+.home_icon :global(.Polaris-Button.Polaris-Button--disabled svg) {
+  fill: #ffffff;
+}
+
+.collection_icon :global(.Polaris-Button--disabled.Polaris-Button--iconOnly) {
+  border-color: transparent;
+  background: rgba(44, 110, 203, 0.9);
+  scale: 0.85;
+}
+
+.collection_icon :global(.Polaris-Button.Polaris-Button--disabled svg) {
+  fill: #ffffff;
+}
+
+.product_icon :global(.Polaris-Button--disabled.Polaris-Button--iconOnly) {
+  border-color: transparent;
+  background: rgba(68, 157, 167, 1);
+  scale: 0.85;
+}
+
+.product_icon :global(.Polaris-Button.Polaris-Button--disabled svg) {
+  fill: #ffffff;
+}
+
+.contact_icon :global(.Polaris-Button--disabled.Polaris-Button--iconOnly) {
+  border-color: transparent;
+  background: rgb(96, 130, 182);
+  scale: 0.85;
+}
+
+.contact_icon :global(.Polaris-Button.Polaris-Button--disabled svg) {
+  fill: #ffffff;
+}
+
+.account_icon :global(.Polaris-Button--disabled.Polaris-Button--iconOnly) {
+  border-color: transparent;
+  background: rgb(255, 219, 88);
+  scale: 0.85;
+}
+
+.account_icon :global(.Polaris-Button.Polaris-Button--disabled svg) {
+  fill: #ffffff;
+}
+
+.checkout_icon :global(.Polaris-Button--disabled.Polaris-Button--iconOnly) {
+  border-color: transparent;
+  background: rgba(90, 34, 139, 0.8);
+  scale: 0.85;
+}
+
+.checkout_icon :global(.Polaris-Button.Polaris-Button--disabled svg) {
+  fill: #ffffff;
+}
+
+.search_icon :global(.Polaris-Button--disabled.Polaris-Button--iconOnly) {
+  border-color: transparent;
+  background: rgb(255, 127, 80);
+  scale: 0.85;
+}
+
+.search_icon :global(.Polaris-Button.Polaris-Button--disabled svg) {
+  fill: #ffffff;
+}
+
+.other_icon :global(.Polaris-Button--disabled.Polaris-Button--iconOnly) {
+  border-color: transparent;
+  background: rgba(140, 145, 150, 1);
+  scale: 0.85;
+}
+
+.other_icon :global(.Polaris-Button.Polaris-Button--disabled svg) {
+  fill: #ffffff;
+}
+
+.hm_page_title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hm_page_type {
+}
+
+.hm_page_activity {
+}
+
+.hm_page_button_group {
+  display: flex;
+  justify-content: center;
+}
+
+.mida_mp_pagination {
+  margin-top: 12px;
+}
+
+@media only screen and (min-width: 1367px) {
+  .hm_page_list_container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 0.5fr;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .hm_page_title {
+    grid-area: title;
+  }
+
+  .hm_page_type {
+    grid-area: type;
+  }
+
+  .hm_page_activity {
+    grid-area: activity;
+  }
+
+  .hm_page_button_group {
+    grid-area: button;
+  }
+
+  .hm_page_list_container {
+    display: grid;
+    grid-template-areas:
+      "title title title"
+      "type activity button";
+    align-items: center;
+  }
+}
+
+.mida_hm_filter {
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+}

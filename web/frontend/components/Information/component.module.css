@@ -1,0 +1,25 @@
+.mida_ci {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.mida_ci:last-child {
+  margin: 1rem 0 0 0;
+}
+
+.mida_ci :global(.ips) {
+  margin: 0 0 0 0.5rem;
+}
+
+.mida_ci :global(.ips .Polaris-Stack) {
+  margin: 0;
+}
+
+.mida_ci :global(.Polaris-Tag) {
+  margin: 0 0 0 1rem;
+}
+
+.mida_ci :global(.ips .Polaris-Stack .Polaris-Stack__Item) {
+  margin: 0 0.5rem;
+}

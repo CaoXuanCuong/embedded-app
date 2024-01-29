@@ -1,0 +1,3 @@
+.ModalRedirect :global(.Polaris-Button Polaris-Button--variantPrimary) {
+  background-color: red !important;
+}

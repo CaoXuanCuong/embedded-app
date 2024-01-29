@@ -1,0 +1,10 @@
+.empty_table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.empty_table h1 {
+  font-size: 16px;
+  margin: 12px 0;
+}

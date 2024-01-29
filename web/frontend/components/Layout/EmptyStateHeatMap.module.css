@@ -1,0 +1,23 @@
+.empty_heatmap p[class^="Polaris-Text--regular"] {
+  font-weight: 400 !important;
+}
+.empty_heatmap div[class^="Polaris-Box"] div[class^="Polaris-BlockStack"] {
+  align-items: start;
+}
+
+.empty_heatmap div[class^="Polaris-Box"] div[class^="Polaris-InlineStack"] {
+  margin-top: 12px;
+  flex-direction: row-reverse;
+}
+
+.regular_text > * {
+  color: #5c5f62;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 980px) {
+  .empty_heatmap > div[class^="Polaris-InlineStack"] {
+    flex-direction: column;
+    gap: 0;
+  }
+}

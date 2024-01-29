@@ -1,0 +1,65 @@
+.heading {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.list {
+  margin: 8px auto;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 12px 0px;
+}
+
+.order {
+  margin-right: 12px;
+  cursor: grab;
+}
+
+.order:hover path {
+  fill: var(--p-color-text);
+}
+
+.input {
+  flex: 1;
+}
+
+.remove {
+  margin: 0px 10px 0px 20px;
+  cursor: pointer;
+}
+
+.remove:hover path {
+  fill: var(--p-color-text);
+}
+
+.remove[data-disabled="true"] {
+  cursor: default;
+  pointer-events: none;
+}
+
+.remove[data-disabled="true"]:hover path {
+  fill: var(--p-color-icon-subdued);
+}
+
+.more {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon {
+  margin-right: 12px;
+  padding: 10px 0px;
+}
+
+.error {
+  flex-basis: 100%;
+  margin-left: 32px;
+  margin-top: 8px;
+  margin-bottom: -8px;
+}

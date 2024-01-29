@@ -1,0 +1,589 @@
+.bss-container {
+  margin-left: 10px;
+}
+
+.comparison {
+  margin: 0 auto;
+  font: 13px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+
+.comparison table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+
+.comparison td,
+.comparison th {
+  empty-cells: show;
+  padding: 10px;
+}
+
+.comparison .compare-row th,
+.comparison .compare-row td {
+  border: 1px solid #f4f6f8;
+}
+
+.comparison .compare-row td:hover .tickblue {
+  color: #b607b3 !important;
+}
+
+.comparison .tickblue {
+  color: #1805c7;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.comparison tr.compare-row {
+  background-color: #fff;
+}
+
+.compare-heading {
+  font-size: 18px;
+  font-weight: bold !important;
+  border-bottom: 0 !important;
+  padding-top: 10px !important;
+}
+
+.comparison tbody tr:nth-child(odd) {
+  display: none;
+}
+
+.comparison th {
+  font-weight: normal;
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.comparison tr td:first-child {
+  text-align: right;
+  padding-right: 25px;
+}
+
+.comparison .price-info {
+  overflow: hidden;
+  position: relative;
+  padding: 18px 0;
+  background: linear-gradient(to right, #1705c8, #b807b3);
+  border-right: 2px solid #f4f6f8;
+}
+
+.comparison .current-plan {
+  color: #fff;
+  font-weight: 600;
+  font-size: 9px;
+  background: #40d495;
+  position: absolute;
+  top: 15px;
+  padding: 1px 15px;
+  right: -20px;
+  transform: rotateY(0deg) rotate(45deg);
+}
+
+.comparison .price-now,
+.comparison .price-now span {
+  color: #f4f6f8;
+}
+
+.comparison .price-now span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.comparison .price-now span.period-small {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.comparison .price-small {
+  font-size: 13px !important;
+  margin: 3px;
+  position: relative;
+  top: -8px;
+  left: 2px;
+}
+
+.comparison .price-now span.period-normal {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.comparison .price-title {
+  font-size: 16px !important;
+  font-weight: 700;
+}
+
+.comparison .price-now__heading {
+  margin-bottom: 0;
+}
+
+.comparison .action-button button {
+  border: none;
+  cursor: pointer;
+  padding: 10px 32px;
+  font-size: 12px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 25px;
+  margin: 5px 0 10px 0;
+  transition: 0.25s;
+}
+
+.comparison .action-button .Polaris-Button--loading {
+  opacity: 0.5;
+}
+
+.comparison .action-button .Polaris-Button--primary {
+  background: linear-gradient(to right, #1705c8, #b807b3);
+  box-shadow: none;
+}
+
+.comparison .action-button .Polaris-Button--primary:hover,
+.comparison .action-button .Polaris-Button--primary:focus {
+  box-shadow: 0 0 15px rgba(98, 6, 190, 0.5);
+  transform: translateY(-0.25em);
+}
+
+.comparison .action-button .Polaris-Button--critical {
+  background: #b7b7b7;
+  box-shadow: none;
+}
+
+.comparison .action-button .Polaris-Button--critical:hover,
+.comparison .action-button .Polaris-Button--critical:focus {
+  box-shadow: 0 0 15px rgba(156, 156, 156, 0.5);
+  transform: translateY(-0.25em);
+}
+
+.comparison .action-button.userguide-button button {
+  background: #f8ab1d;
+}
+
+.comparison .action-button.userguide-button button:hover,
+.comparison .action-button.userguide-button button:focus {
+  box-shadow: 0 0 15px rgba(248, 171, 29, 0.6);
+  transform: translateY(-0.25em);
+}
+
+.comparison .price-try {
+  font-size: 12px;
+}
+
+.comparison .price-try a {
+  color: #202020;
+}
+
+.heading-pricing__row td,
+.heading-pricing__row td {
+  border-top: 2px solid #c1c1c1;
+}
+
+td.compare-title {
+  background: #f4f6f8 !important;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.comparison table tr,
+.comparison table td,
+.comparison table th {
+  color: #696969;
+}
+
+.heading-pricing__title {
+  font-weight: 1000;
+  color: #333333;
+}
+
+.heading-pricing__row {
+  background: #f5f5f5;
+}
+
+#set-width-column {
+  width: 25%;
+}
+
+.pricing-plan__footer .button {
+  padding-top: 20px;
+}
+
+.pricing-plan__footer th {
+  border-bottom: none !important;
+}
+
+/* For header */
+.bss-container {
+  font-family: sans-serif;
+}
+
+.pricing-title-header {
+  margin-top: 30px;
+  margin-left: 25%;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.pricing-title-header h1 {
+  margin-bottom: 10px;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.pricing-title-header h2 {
+  font-size: 15px;
+  color: #686868;
+}
+
+.bss-nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #c1c1c1;
+  border-bottom: 2px solid transparent;
+}
+
+.bss-nav::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, #1705c8, #b807b3);
+  position: absolute;
+  bottom: 0;
+}
+
+.bss-nav .nav-item {
+  padding: 25px 20px;
+}
+
+.bss-nav .nav-item a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+}
+
+/* Pricing-table hover effect */
+
+.comparison tr.compare-row:hover {
+  box-shadow: inset 0 0 15px rgba(156, 156, 156, 0.5);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+/*For features*/
+.bss-pl__plans-features {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.bss-pl__plans-features .bss-pl__plans-features-header {
+  text-align: center;
+  padding: 50px 0 35px;
+}
+
+.bss-pl__plans-features .bss-pl__plans-features-header h1 {
+  text-align: center;
+  font-size: 25px;
+  padding: 50px 0 35px;
+  font-weight: 900 !important;
+}
+
+.bss-pl__plans-features .bss-pl__plans-feature-image-wrapper {
+  padding: 10px;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #1400c8 0, #b900b4 100%);
+}
+
+.bss-pl__plans-features .bss-pl__plans-feature-image {
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  height: 230px;
+}
+
+.bss-pl__plans-features .bss-pl__plans-feature-details p {
+  color: #686868;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.bss-pl__plans-features .bss-pl__plans-feature-details ul li {
+  margin-left: 25px !important;
+}
+
+/* need for responsive feature */
+
+.bss-pl__plans-features .bss-pl__plans-feature {
+  display: flex;
+  align-items: flex-start;
+  min-height: 320px;
+}
+
+.bss-pl__plans-features .bss-pl__plans-feature-image-wrapper {
+  width: 50%;
+}
+
+.bss-pl__plans-features .bss-pl__plans-feature .bss-pl__plans-feature-heading h4 {
+  margin-top: 0;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.bss-pl__plans-features .bss-pl__plans-feature ul {
+  padding-left: 12px;
+  list-style: none;
+}
+
+.bss-pl__plans-features .bss-pl__plans-feature ul > li > p::before {
+  content: "\2022";
+  color: #ff9900;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.bss-pl__plans-features .bss-pl__plans-feature-content {
+  padding: 0 20px;
+  box-sizing: border-box;
+  width: 60%;
+}
+
+.only-mobile {
+  display: none;
+}
+
+.only-desktop {
+  display: inline-block;
+}
+
+/* media query to responsive */
+
+@media (max-width: 767px) {
+  .comparison .compare-row td:hover .tickblue {
+    color: #b607b3 !important;
+  }
+
+  .comparison .tickblue {
+    color: #1805c7 !important;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .only-mobile {
+    display: block;
+  }
+
+  .only-desktop {
+    display: none;
+  }
+
+  .comparison td:first-child,
+  .comparison th:first-child {
+    display: none;
+  }
+
+  .comparison tbody tr:nth-child(odd) {
+    display: table-row;
+    background: #f7f7f7;
+  }
+
+  .comparison .row {
+    background: #fff;
+  }
+
+  .comparison td,
+  .comparison th {
+    border: 1px solid #ccc;
+  }
+
+  .price-info {
+    border-top: 0 !important;
+  }
+
+  .heading-pricing__row td,
+  .heading-pricing__row td {
+    display: none;
+  }
+
+  .heading-pricing__title {
+    background: #573eb3;
+    color: #fff !important;
+  }
+
+  .comparison td,
+  .comparison th {
+    padding: 10px 5px;
+  }
+
+  .comparison,
+  body {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .comparison .price-info {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .heading-pricing__title {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 11;
+  }
+
+  .pricing-plan__footer th {
+    border: 0 !important;
+  }
+
+  .bss-pl__plans-features .bss-pl__plans-feature {
+    display: block;
+    min-height: 320px;
+    position: relative;
+  }
+
+  .bss-pl__plans-features .bss-pl__plans-feature::after {
+    content: "";
+    height: 1px;
+    width: 50%;
+    margin-left: 25%;
+    background: #f5a215;
+    position: absolute;
+    bottom: -5px;
+    margin-bottom: 20px;
+  }
+
+  .bss-pl__plans-features .bss-pl__plans-feature-image-wrapper {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .bss-pl__plans-features .bss-pl__plans-feature-content {
+    padding: 20px 10px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .bss-pl__plans-features .bss-pl__plans-features-header h1 {
+    text-align: center;
+    font-size: 22px;
+    line-height: 22px;
+    padding: 20px 0 15px;
+  }
+
+  .pricing-title-header {
+    margin-left: 0;
+    padding: 0 10px;
+  }
+
+  .pricing-title-header h1 {
+    font-weight: 800;
+    font-size: 20px;
+  }
+
+  .pricing-title-header h2 {
+    font-size: 13px;
+  }
+
+  .comparison .price-info {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .comparison .price-title {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 639px) {
+  .comparison .action-button button {
+    padding: 10px 15px;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .pricing-plan__footer .button {
+    padding-top: 0;
+  }
+
+  .comparison td,
+  .comparison th {
+    padding: 10px 5px;
+  }
+
+  .comparison .price-now span {
+    font-size: 15px;
+  }
+
+  .heading-pricing__title {
+    position: sticky;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: -webkit-sticky;
+    top: 0;
+  }
+
+  .comparison .price-small {
+    font-size: 15px !important;
+    top: 0;
+    left: 0;
+  }
+
+  .comparison .action-button {
+    margin-top: 10px;
+    z-index: 2;
+  }
+
+  .compare-heading {
+    font-size: 13px;
+  }
+
+  .comparison .current-plan {
+    color: #fff;
+    font-weight: 600;
+    font-size: 9px;
+    background: #40d495;
+    position: absolute;
+    top: 0px;
+    padding: 1px 15px;
+    right: 0px;
+    transform: rotateY(0deg) rotate(0deg);
+  }
+
+  .comparison .action-button {
+    font-size: 11px;
+  }
+
+  .comparison .action-button span.Polaris-Button__Content {
+    font-size: 13px;
+  }
+}
+
+.sticky {
+  position: sticky;
+  top: 56px;
+  z-index: 50;
+}
+
+.bss-ltap-container .Polaris-Scrollable--vertical {
+  overflow-y: unset !important;
+}
+
+.custom-btn .Polaris-Button.Polaris-Button--primary {
+  background-color: #6161eb;
+}
+
+.custom-btn .Polaris-Button.Polaris-Button--primary:hover {
+  background-color: #006ae8;
+}

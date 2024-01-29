@@ -1,0 +1,14 @@
+.divider {
+  border-left: var(--p-border-width-1) solid var(--p-color-border-subdued);
+  margin-left: 16px;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+  .divider {
+    border-left: none;
+    margin-left: 0px;
+    border-top: var(--p-border-width-1) solid var(--p-color-border-subdued);
+    margin-top: 16px;
+  }
+}

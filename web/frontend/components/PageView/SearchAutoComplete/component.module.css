@@ -1,0 +1,19 @@
+.title {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search_text {
+  color: #6d7175;
+  margin-right: 12px;
+}
+
+.search_box {
+  width: 50%;
+  margin-right: 12px;
+}

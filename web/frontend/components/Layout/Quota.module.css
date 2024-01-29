@@ -1,0 +1,36 @@
+.quota_banner {
+  font-size: 11px;
+}
+
+.quota_banner :global(.Polaris-Heading) {
+  font-size: 13px;
+}
+
+.quota_banner :global(.Polaris-Banner) {
+  padding: 10px;
+}
+
+.quota_banner :global(.Polaris-Banner__Ribbon) {
+  padding-right: 10px;
+}
+
+.quota_banner__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.quota_banner__body__button {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 10px;
+}
+
+.quota_banner__body__button > button {
+  font-weight: 500;
+  background: rgba(0, 128, 96, 1);
+  color: rgba(255, 255, 255, 1);
+  display: inline-flex;
+  border: 1px solid rgba(186, 191, 195, 1);
+  border-radius: 4px;
+  padding: 5px 10px;
+}

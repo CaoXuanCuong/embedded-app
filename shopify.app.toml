@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "CuongCX CDN Caching"
+client_id = "e5b2b997781002e3b168a1d0c11a326d"
+application_url = "https://dev-mida-cuongcx2.dev-bsscommerce.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://dev-mida-cuongcx2.dev-bsscommerce.com/auth/callback",
+  "https://dev-mida-cuongcx2.dev-bsscommerce.com/auth/shopify/callback",
+  "https://dev-mida-cuongcx2.dev-bsscommerce.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "dev-long-ld1-store.myshopify.com"

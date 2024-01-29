@@ -1,0 +1,250 @@
+:root {
+  --color-text-subdued: rgb(150, 152, 155);
+  --color-white: #fff;
+  --color-button: orange;
+  --color-border-subdued: #aaacad;
+  --color-border-focus: #808283;
+  --color-banner-error-border: #e0b3b2;
+  --color-banner-error-bg: #fff4f4;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.text-dark {
+  color: #262626;
+}
+
+.text-subdued {
+  color: var(--color-text-subdued);
+}
+
+.bss-b2b-login-wrapper {
+  background: url("/static/background.png");
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bss-b2b-login-form {
+  background-color: var(--color-white);
+  padding: 32px;
+  border-radius: 7px;
+  text-align: center;
+  width: 600px;
+}
+
+.bss-b2b-login-form-header {
+  text-transform: uppercase;
+}
+
+.bss-b2b-login-form-header .form-logo {
+  width: 60px;
+  height: 60px;
+}
+
+.bss-b2b-login-form-header .form-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.bss-b2b-login-form-header .form-description {
+  color: var(--color-text-subdued);
+  font-size: 12.5px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  word-spacing: 1px;
+  margin-bottom: 35px;
+}
+
+.bss-b2b-login-form-field {
+  text-align: start;
+}
+
+.bss-b2b-login-form-banner {
+  display: none;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid var(--color-banner-error-border);
+  background-color: var(--color-banner-error-bg);
+  position: relative;
+  overflow-y: auto;
+  justify-content: space-between;
+}
+
+.bss-b2b-login-form-banner .banner-icon-error {
+  width: 20px;
+  height: 20px;
+  background: url("/public/static/svg/diamond_alert_major.svg");
+  background-size: cover;
+  margin-right: 20px;
+}
+
+.bss-b2b-login-form-banner .banner-content {
+  text-align: start;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.bss-b2b-login-form-banner .bss-b2b-login-banner-message {
+  display: flex;
+}
+
+.bss-b2b-login-form-banner .banner-title {
+  margin: 0;
+}
+
+.bss-b2b-login-form-banner .banner-description {
+  margin: 0;
+  font-size: 14px;
+}
+
+.bss-b2b-login-form-banner .banner-close {
+  margin-left: auto;
+  width: 18px;
+  height: 18px;
+  background: url("/public/static/svg/cancel_major.svg");
+  background-size: cover;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.bss-b2b-login-form-input-wrapper {
+  position: relative;
+}
+
+.bss-b2b-login-form-input-wrapper .input-tooltip-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+
+.bss-b2b-login-form-input-wrapper .input-tooltip-icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background: url("/public/static/svg/circle_exclamation_solid.svg");
+  background-size: cover;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.bss-b2b-login-form-input-wrapper .input-tooltip-icon:hover > .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.bss-b2b-login-form-input-wrapper .tooltip {
+  padding: 7px 20px 7px 10px;
+  position: absolute;
+  background: var(--color-white);
+  top: 20px;
+  left: 20px;
+  border-radius: 5px;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.15s ease-in-out;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.bss-b2b-login-form-input-wrapper .tooltip-title {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.bss-b2b-login-form-input-wrapper .tooltip-content-list {
+  margin: 0;
+  padding-left: 30px;
+}
+
+.bss-b2b-login-form-field input {
+  width: 100%;
+  height: 44px;
+  padding: 5px 35px 5px 12px;
+  border: 1px solid var(--color-border-subdued);
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+}
+
+.bss-b2b-login-form-field input:focus {
+  border: 2px solid var(--color-border-focus);
+}
+
+.bss-b2b-login-form-field .field-description {
+  color: var(--color-text-subdued);
+  font-size: 14px;
+}
+
+.bss-b2b-login-wrapper .bss-b2b-login-form-footer {
+  padding: 20px 0 0;
+}
+
+.bss-b2b-login-wrapper .bss-b2b-login-form-footer button {
+  background-color: var(--color-button);
+  height: 44px;
+  width: 100%;
+  border: none;
+  color: white;
+  padding: 5px 12px;
+  float: right;
+  border-radius: 7px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.bss-b2b-login-wrapper .bss-b2b-login-form-footer button:hover {
+  background: linear-gradient(135deg, #1400c8 0, #b900b4 100%);
+  box-shadow: whitesmoke 2px 3px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .bss-b2b-login-form {
+    width: 100%;
+    margin: 0 10px;
+  }
+  .bss-b2b-login-form-input-wrapper .tooltip {
+    font-size: 14px;
+    padding: 7px 10px 7px 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+      rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  }
+
+  .bss-b2b-login-form-banner {
+    flex-direction: column-reverse;
+  }
+  .bss-b2b-login-form-banner .banner-icon-error {
+    position: absolute;
+    top: 13px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+  }
+  .bss-b2b-login-form-banner .banner-content {
+    text-align: center;
+    flex: 1;
+  }
+}

@@ -1,0 +1,40 @@
+.container {
+  height: 100%;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.page:hover {
+  background-color: #f6f7f7;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.rank {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #375471;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rank * {
+  color: #f6f7f7;
+}
+
+.content {
+  margin: 0px 14px;
+  width: 164px;
+  flex: 1;
+}
+
+.count {
+  width: 54px;
+}

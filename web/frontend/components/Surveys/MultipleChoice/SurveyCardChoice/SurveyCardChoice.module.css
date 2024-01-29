@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 178px;
+  background: #ffffff;
+  border: 2px solid #babfc3;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.container[data-active="true"] {
+  border: 2px solid #458fff;
+}
+
+.container[data-active="true"] .icon path {
+  fill: #458fff;
+}
+
+.container[data-active="true"] .title {
+  color: #458fff;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.icon span {
+  width: 36px;
+  height: 36px;
+}
+
+.icon path {
+  fill: #5c5f62;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  height: 24px;
+  text-align: center;
+  color: #202223;
+  margin-top: 14px;
+}
+
+.desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #202223;
+  margin-top: 12px;
+  flex: 1;
+}

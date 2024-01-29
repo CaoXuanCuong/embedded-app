@@ -1,0 +1,9 @@
+.tooltip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tooltip .title {
+  flex: 1;
+}

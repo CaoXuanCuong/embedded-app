@@ -1,0 +1,253 @@
+.bss-mida-bfcm-banner {
+  cursor: pointer;
+}
+
+.bss-mida-bfcm-banner > .Polaris-LegacyCard {
+  background: url("../../images/bfcm/Banner_Background.svg");
+  width: 100%;
+  height: max-content;
+  border-radius: 8px;
+  background-size: cover;
+}
+
+.bss-mida-bfcm-banner .Polaris-LegacyCard__Section {
+  padding: 1rem 1.25rem;
+}
+
+.bss-mida-bfcm-banner .Polaris-CalloutCard__Content {
+  color: white;
+}
+
+.bss-mida-bfcm-banner .Polaris-CalloutCard__Title {
+  margin-bottom: 0.5rem;
+  color: #ca47c3;
+}
+
+.bss-mida-bfcm-banner .Polaris-CalloutCard img {
+  width: 0px;
+  margin: 0;
+}
+
+.bss-mida-bfcm-banner .Polaris-TextContainer {
+  font-size: 1.05rem;
+}
+
+.bss-mida-bfcm-banner .Polaris-TextContainer p b {
+  color: #ca47c3;
+}
+
+.bss-mida-bfcm-banner .Polaris-CalloutCard__Buttons {
+  margin-top: 0.75rem;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+.bss-mida-bfcm-banner .Polaris-CalloutCard__Buttons .Polaris-Button {
+  padding: 0px 14px;
+  background-image: linear-gradient(to bottom right, #f569a6, #ca47c3);
+  border-radius: 0.4rem;
+  border: none;
+  outline: none;
+  color: white;
+  transition: all 150ms linear 0s;
+  animation-name: pulse;
+  -webkit-animation-name: pulse;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+/* widget */
+
+.bss-mida-widget-section {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 24px;
+  bottom: 100px;
+  transition: all 150ms linear 0s;
+  animation-name: pulse;
+  -webkit-animation-name: pulse;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  border-radius: 20px;
+  z-index: 9999;
+}
+
+.bss-mida-widget-section .widget_icon {
+  background: url("../../images/bfcm/Widget.svg");
+  display: block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-size: cover;
+  cursor: pointer;
+  position: relative;
+}
+
+.bss-mida-widget-wrapper {
+  position: relative;
+}
+
+#widget_close_btn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.bss-mida-widget-section .widget_textContaniner {
+  background: url("../../images/bfcm/GetSurprised_Background.svg");
+  display: block;
+  margin-top: -10px;
+  color: #ca47c3;
+  width: 147px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 48px;
+  height: 48px;
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+}
+
+.bss-mida-widget-section .square {
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #2a2341;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+  right: -10px;
+  top: 45%;
+}
+
+@media screen and (max-width: 600px) {
+  .bss-mida-widget-section {
+    position: fixed;
+    right: 26px;
+    bottom: 90px;
+  }
+  .bss-mida-widget-section .widget_icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bss-mida-widget-section {
+    position: fixed;
+    right: 0px;
+    bottom: 70px;
+  }
+  .bss-mida-widget-section .widget_icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* plan card */
+.bfcm-header div.price-regular {
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  color: #cccc !important;
+  text-decoration: line-through;
+}
+
+.bfcm-header .price-info {
+  padding: 0px !important;
+  background: white !important;
+  border-right: 2px solid #f4f6f8 !important;
+}
+.bfcm-header .price-now {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bfcm-header .price-info:last-child .price-now {
+  background: url("../../images/bfcm/Pricing_Background.svg");
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+}
+
+.bfcm-header .price-now span {
+  color: black !important;
+}
+.bfcm-header .price-info:last-child .price-now span {
+  color: white !important;
+}
+
+.bfcm-header .sale-description {
+  margin-top: 8px;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+.bfcm-header .sale-description b {
+  color: #ca47c3 !important;
+}
+.bfcm-current-plan {
+  background: url("../../images/bfcm/Pricing_Badge.svg") !important;
+  background-size: cover !important;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 56px;
+  height: 56px;
+}
+.bfcm-current-plan-text {
+  background-color: transparent !important;
+  right: -5px !important;
+  font-weight: 800 !important;
+}

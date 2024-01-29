@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  background-color: rgb(241, 242, 243);
+  border-radius: 4px;
+  padding: 4px;
+  margin-left: 1px;
+  margin-bottom: 8px;
+}
+
+.info {
+  flex: 1;
+  margin: 4px 16px;
+
+  max-height: 40px;
+  line-height: 20px;
+  font-weight: var(--p-font-weight-semibold);
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

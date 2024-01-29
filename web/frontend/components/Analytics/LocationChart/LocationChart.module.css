@@ -1,0 +1,52 @@
+.geo {
+  width: 100%;
+  height: 540px;
+  margin: 12px auto;
+}
+
+.geo .wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.geo path:hover {
+  fill: #375471;
+}
+
+.country {
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  height: 36px;
+  border-radius: 4px;
+}
+
+.country:hover {
+  background-color: #f6f7f7;
+}
+
+.country .flag {
+  display: flex;
+  align-items: center;
+  margin-right: 14px;
+}
+
+.country .name {
+  width: 120px;
+}
+
+.country .name *,
+.country .suffix * {
+  color: #375471;
+}
+
+.country .progress {
+  flex: 1;
+  margin: 0 14px;
+
+  --p-color-border-info: #375471 !important;
+}
+
+.country .suffix {
+  width: 48px;
+}

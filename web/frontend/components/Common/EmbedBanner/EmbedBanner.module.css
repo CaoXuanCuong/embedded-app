@@ -1,0 +1,3 @@
+.container :global(.Polaris-ButtonGroup) {
+  justify-content: start;
+}
